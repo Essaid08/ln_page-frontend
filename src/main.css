@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+   /* reuseble class to keep the same designe across project components */
+  .main-btn {
+    @apply  outline-0 text-center cursor-pointer py-2 px-6 text-[#151811] dark:text-[#f7fef9] text-[18px] border-2 border-[#151811] dark:border-[#e3f5ea] 
+    bg-transparent font-bold leading-7 transition-[background,color]  duration-[0.1s] ease-[ease-in-out] hover:bg-[#151811] hover:text-[#D3F1DF] hover:dark:bg-[#B2C9AD] hover:dark:text-[#3C3D37]  ;
+  }
+  /* sreuseble class for all examples  */
+  .exmp-btn {
+    @apply  outline-0 text-center cursor-pointer py-2 px-6 text-[#151811] dark:text-[#f7fef9] text-[18px] border-2 border-[#151811] dark:border-[#e3f5ea] 
+    bg-transparent font-bold leading-7 transition-[background,color]  duration-[0.1s] ease-[ease-in-out] hover:scale-105 ;
+  }
+  /*style for the nav bar*/
+  .nav_li {
+    @apply font-bold text-lg lg:text-xl xl:text-2xl list-none ;
+  }
+  .nav_li_mobile {
+    @apply font-black text-xl  md:text-2xl list-none ;
+  }
+  .nav_span {
+    @apply absolute -bottom-1 left-0 w-0 transition-all h-[2.5px] bg-[#151811] dark:bg-[#f7fef9] group-hover:w-full;
+  }
+  .nav_span_mobile {
+    @apply absolute -bottom-1 left-0 w-0 transition-all h-[2.5px] bg-[#151811] dark:bg-[#000000] group-hover:w-full;
+  }
+
+  /* form reusble classes to prevent DRY CSS */
+  
+  .form-section {
+    @apply w-full flex flex-col gap-10 md:pt-7 text-[#151811] dark:text-[#f7fef9] py-12 md:flex-row justify-between items-center max-w-[1580px] px-12 md:px-16 lg:px-20 xl:px-32 md:items-start border-2 border-[#151811] dark:border-[#f7fef9]
+  }
+
+  .instruction-p {
+    @apply text-[14px] lg:text-[18px] opacity-85 ml-10 ;
+  }
+
+  .history-p {
+    @apply text-[15px] lg:text-[18px] opacity-85 ml-10 font-semibold ;
+  }
+
+  .result {
+    @apply w-full text-center font-extrabold text-[20px] md:text-[22px] lg:text-[26px] mt-10 ;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+  font-family: monospace;
+}
+
+/* animation for scrolling section*/
+.scroll_animation {
+  animation: appear  linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 34%;
+}
+
+/* animation for the Poster component*/
+.poster_animation {
+  animation: poster 1.5s linear;
+}
+
+/* poster animations applys when components mount */
+.poster_animation_left {
+  animation: poster-left 1.5s linear;
+
+}
+
+/*animation for the nav bar*/
+.head_animation {
+  animation: appear-head  0.5s linear;
+}
+
+
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity : 1;
+    scale: 1;
+  }
+}
+
+@keyframes appear-head {
+  from {
+    opacity: 0;
+    scale: 0.1;
+  }
+  to {
+    opacity : 1;
+    scale: 1;
+  }
+}
+
+@keyframes poster {
+  from {
+    opacity: 0;
+    clip-path: inset(100% 100% 0 0);
+  }
+  to {
+    opacity : 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+@keyframes poster-left {
+  from {
+    opacity: 0;
+    clip-path: inset(0 0 100% 100%);
+  }
+  to {
+    opacity : 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
