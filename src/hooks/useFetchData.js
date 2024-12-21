@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const URL = import.meta.env.VITE_API_URL;
+const URL = import.meta.env.VITE_API_URL.replace(/\/$/, '');
 
 const useFetchData = (currentUrl, finalInput , bodyKey) => {
 
