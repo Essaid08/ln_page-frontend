@@ -1,6 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
 import poster from "../../assets/posterPali.png";
-
 const Palindromposter = () => {
 	return (
 	  <section className='w-full flex flex-col gap-10 pt-20 pb-24 md:flex-row justify-between items-center max-w-[1580px] px-12 md:px-16 lg:px-20 xl:px-32  md:items-start '>

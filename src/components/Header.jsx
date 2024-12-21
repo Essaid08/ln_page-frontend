@@ -45,7 +45,7 @@ const Header = () => {
 			<Link to='/'>
 				<div className='flex justify- items-center gap-2 head_animation'>
 					<SiReactos size={35} />
-					<div className='font-black text-xl md:text-2xl'>LNPAGE</div>
+					<div className='font-black text-xl hidden md:block md:text-2xl'>LNPAGE</div>
 				</div>
 			</Link>
 
