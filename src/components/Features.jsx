@@ -1,6 +1,6 @@
 const Features = () => {
 	return (
-		<section className='w-full flex flex-col gap-10 pt-10 pb-24  justify-center items-center max-w-[1580px] px-12 md:px-16 lg:px-20 xl:px-32  '>
+		<section className='w-full flex flex-col gap-10 pt-10 pb-24  justify-center items-center max-w-[1580px] px-7 md:px-16 lg:px-20 xl:px-32  '>
 			<div className='text-[#151811]  dark:text-[#f7fef9] scroll_animation'>
 				<h1 className='text-center font-extrabold text-[26px] md:text-[30px] lg:text-[34px]'>
 					What's inside 👀

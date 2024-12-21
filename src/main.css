@@ -31,15 +31,15 @@
   /* form reusble classes to prevent DRY CSS */
   
   .form-section {
-    @apply w-full flex flex-col gap-10 md:pt-7 text-[#151811] dark:text-[#f7fef9] py-12 md:flex-row justify-between items-center max-w-[1580px] px-12 md:px-16 lg:px-20 xl:px-32 md:items-start border-2 border-[#151811] dark:border-[#f7fef9]
+    @apply w-full flex flex-col gap-10 md:pt-7 text-[#151811] dark:text-[#f7fef9] py-12 md:flex-row justify-between items-center max-w-[1580px] px-5 md:px-16 lg:px-20 xl:px-32 md:items-start border-2 border-[#151811] dark:border-[#f7fef9]
   }
 
   .instruction-p {
-    @apply text-[14px] lg:text-[18px] opacity-85 ml-10 ;
+    @apply text-[14px] lg:text-[18px] opacity-85 ml-3 ;
   }
 
   .history-p {
-    @apply text-[15px] lg:text-[18px] opacity-85 ml-10 font-semibold ;
+    @apply text-[15px] lg:text-[18px] opacity-85 ml-3 font-semibold ;
   }
 
   .result {

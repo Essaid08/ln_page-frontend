@@ -25,7 +25,7 @@ const Poster = () => {
 	// Conditionally render the image based on screen width
 	const imageToShow = windowWidth >= 768 ? poster : phone;
 	return (
-		<section className='w-full flex flex-col gap-10 pt-20 pb-24 md:flex-row justify-between items-center max-w-[1580px] px-12 md:px-16 lg:px-20 xl:px-32  md:items-start '>
+		<section className='w-full flex flex-col gap-10 pt-12 pb-24 md:flex-row justify-between items-center max-w-[1580px] px-5 md:px-16 lg:px-20 xl:px-32  md:items-start '>
 			<div className='flex flex-col gap-7 justify-center items-center md:items-start md:max-w-[50%] lg:gap-10 poster_animation'>
 				<h1 className='text-[#151811]  max-w-[550px] text-[27px] dark:text-[#f7fef9] font-black text-center md:text-start md:text-[30px] lg:text-[35px]'>
 					Discover some of the most exciting coding features and Algorithmes

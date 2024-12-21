@@ -41,7 +41,7 @@ const Header = () => {
 	};
 
 	return (
-		<nav className='relative w-full max-w-[1580px] text-[#151811] dark:text-[#f7fef9] flex items-center justify-between py-5  px-12 md:px-16 lg:px-20 xl:px-32'>
+		<nav className='relative w-full max-w-[1580px] text-[#151811] dark:text-[#f7fef9] flex items-center justify-between py-5  px-5 md:px-16 lg:px-20 xl:px-32'>
 			<Link to='/'>
 				<div className='flex justify- items-center gap-2 head_animation'>
 					<SiReactos size={35} />
@@ -92,7 +92,7 @@ const Header = () => {
 
 			{/* Mobile nav bar */}
 			{isMenuOpen && (
-				<div className='absolute rounded-2xl py-10 z-10 top-20 right-12 w-[78%] md:w-[50%] bg-[#addfba] dark:bg-[#cefedb] text-[#000000]
+				<div className='absolute rounded-2xl py-10 z-10 top-20 right-9 w-[78%] md:w-[50%] bg-[#addfba] dark:bg-[#cefedb] text-[#000000]
 				   flex flex-col items-center gap-8 p-4 lg:hidden'>
 					<Link
 						className='group relative w-max'

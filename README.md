@@ -19,6 +19,7 @@ The application includes 4 main pages:
 - **Tailwind CSS**: A utility-first CSS framework that simplifies the process of designing responsive and customizable UI components.
 - **React Router DOM**: A routing library for navigating between different views in the application.
 - **React Icons**: A set of icons for integrating into the UI, providing intuitive visual representations of features.
+- **Axios** : A third party libery for effecient data fetching .
 
 ### Backend
 - **Express**: A minimal and flexible Node.js web application framework, used to handle the server-side logic.
@@ -29,13 +30,29 @@ The application includes 4 main pages:
 ### Docker
 - **Docker**: The project is Dockerized, which allows you to easily run the entire application with containers. The Docker Compose setup helps to manage both frontend and backend services.
 
+## Application Features:
+
+The application includes 4 pages, easily navigable via the navbar or cards at the bottom of each page (above the footer).
+
+Dark mode is integrated for an enhanced user experience along with simple scrolling and viewing native animation writing in pure CSS.
+
+Several reusable components that simplify the application building blocks.
+
+Custom hook designed particularly for this project to handling data and errors comming from the server.
+
+## Deployment:
+
+Frontend: Deployed on Vercel.
+
+Backend: Deployed on Koyeb.
+
 ## visit the app via the url 
 
 https://ln-page-frontend.vercel.app
 
 ## How to Run
 
-### Frontend
+### FrontEnd
 1. Navigate to the frontend directory:
    ```bash
    cd front_end
@@ -44,9 +61,10 @@ https://ln-page-frontend.vercel.app
 3. Start the frontend application:
    npm run dev
 
-### Frontend
-1-Navigate to the backend directory:
-  cd back_end
+### BackEnd
+1. Navigate to the backend directory:
+  ```bash
+   cd back_end
 2. Install dependencies:
    npm install
 3. Start the backend server::
@@ -55,6 +73,9 @@ https://ln-page-frontend.vercel.app
 ## Conclusion
 This project is designed to provide users with a simple and interactive platform to test common algorithms. With a clean and responsive UI built using React and Tailwind CSS, along with a robust backend built using Express, this full-stack application serves as both a learning tool and a demonstration of algorithmic concepts. Additionally, the built-in dark mode ensures that users have a comfortable viewing experience, whether they prefer a light or dark interface.
 
+
+## Note :  
+please if you encounter some issues of network error in the algorithms forms  don't hesitate to contact me that's due to the limitations of client requestes in the Koyeb PAAS wich host our server.
 
 
 
