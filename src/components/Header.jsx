@@ -44,7 +44,7 @@ const Header = () => {
 		<nav className='relative w-full max-w-[1580px] text-[#151811] dark:text-[#f7fef9] flex items-center justify-between py-5  px-12 md:px-16 lg:px-20 xl:px-32'>
 			<Link to='/'>
 				<div className='flex justify- items-center gap-2 head_animation'>
-					<SiReactos size={40} />
+					<SiReactos size={35} />
 					<div className='font-black text-xl md:text-2xl'>LNPAGE</div>
 				</div>
 			</Link>
@@ -53,7 +53,7 @@ const Header = () => {
 				<Link
 					className='mt-2 group relative w-max'
 					to='/palindrom'>
-					<li className='nav_li'>palindrom</li>
+					<li className='nav_li'>Palindrom</li>
 					<span className='nav_span'></span>
 				</Link>
 				<Link
@@ -82,17 +82,17 @@ const Header = () => {
 			{/* Mobile menu button */}
 			<button
 				onClick={toggleMenu}
-				className='ml-10 lg:hidden head_animation'>
+				className='ml-6 lg:hidden head_animation'>
 				{!isMenuOpen ? (
-					<TiThMenuOutline size={35} />
+					<TiThMenuOutline size={32} />
 				) : (
-					<BsFillMenuAppFill size={35} />
+					<BsFillMenuAppFill size={32} />
 				)}
 			</button>
 
 			{/* Mobile nav bar */}
 			{isMenuOpen && (
-				<div className='absolute rounded-2xl py-10 z-10 top-20 right-16 w-[70%] md:w-[50%] bg-[#addfba] dark:bg-[#bbedc8] text-[#000000]
+				<div className='absolute rounded-2xl py-10 z-10 top-20 right-12 w-[78%] md:w-[50%] bg-[#addfba] dark:bg-[#cefedb] text-[#000000]
 				   flex flex-col items-center gap-8 p-4 lg:hidden'>
 					<Link
 						className='group relative w-max'

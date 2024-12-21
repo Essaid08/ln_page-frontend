@@ -11,7 +11,7 @@
   }
   /* sreuseble class for all examples  */
   .exmp-btn {
-    @apply  outline-0 text-center cursor-pointer py-2 px-6 text-[#151811] dark:text-[#f7fef9] text-[18px] border-2 border-[#151811] dark:border-[#e3f5ea] 
+    @apply  outline-0 text-center cursor-pointer py-2 px-6 text-[#151811] dark:text-[#f7fef9] text-[14px] md:text-[18px] border-2 border-[#151811] dark:border-[#e3f5ea] 
     bg-transparent font-bold leading-7 transition-[background,color]  duration-[0.1s] ease-[ease-in-out] hover:scale-105 ;
   }
   /*style for the nav bar*/
@@ -19,7 +19,7 @@
     @apply font-bold text-lg lg:text-xl xl:text-2xl list-none ;
   }
   .nav_li_mobile {
-    @apply font-black text-xl  md:text-2xl list-none ;
+    @apply font-bold text-lg  md:text-xl list-none ;
   }
   .nav_span {
     @apply absolute -bottom-1 left-0 w-0 transition-all h-[2.5px] bg-[#151811] dark:bg-[#f7fef9] group-hover:w-full;
