@@ -1,23 +1,12 @@
-import PalandromSvg from "../assets/svgs/PalindromSvg";
-import FibonacciSvg from "../assets/svgs/FibonnciiSvg";
-import PagesCarts from "../components/carts/PagesCarts";
 import Facts from "../components/Facts";
 import Footer from "../components/Footer";
 import PerfectNumberForm from "../components/forms/PerfectNumberForm";
 import Header from "../components/Header";
-import PerfectNumberPoster from "../components/posters/PerfectNumberPoster";
+import PagesPoster from "../components/posters/PagesPoster";
 import { perfectNumberFacts } from "../factsData";
+import HomeCarts from "../components/carts/HomeCarts";
+import poster from "../assets/numbers.png"
 
-
-const cartsProps = {
-	svgIcon1 : PalandromSvg,
-	header1 :'Palindrom Algorithme for strings.' ,
-	linkto1 : '/palindrom',
-	svgIcon2 :FibonacciSvg ,
-	header2 : 'Fibonacci finder (just for developers).',
-	linkto2 : '/fibonacci',
-
-}
 
 const PerfectNumber = () => {
 	return (
@@ -26,10 +15,18 @@ const PerfectNumber = () => {
 				<Header />
 			</header>
 			<main className='w-full flex flex-col items-center justify-center '>
-				<PerfectNumberPoster />
+
+				<PagesPoster
+				  header="Enjoy using our free perfect number  checker."
+				  fromLink="#perfect_numbers_form"
+				  paragraph="Feel free to scroll down to the form and give it a try. "
+				  image={poster}
+				  imageName="perfect_numbers_form"
+				/>
+
 				<Facts {...perfectNumberFacts} />
 				<PerfectNumberForm />
-				<PagesCarts {...cartsProps}/>
+				<HomeCarts/>
 			</main>
 			<div className='w-full flex flex-col items-center justify-center '>
 				<Footer />

@@ -2,23 +2,11 @@ import Facts from "../components/Facts";
 import Footer from "../components/Footer";
 import FormPalindrom from "../components/forms/FormPalindrom";
 import Header from "../components/Header";
-import Palindromposter from "../components/posters/Palindromposter";
 import { palindromeFacts } from "../factsData"; 
-import PagesCarts from "../components/carts/PagesCarts"
-import PerfectNumberSvg from "../assets/svgs/PalindromSvg"
-import FibonacciSvg from "../assets/svgs/FibonnciiSvg";
+import HomeCarts from "../components/carts/HomeCarts";
+import PagesPoster from "../components/posters/PagesPoster";
+import poster from "../assets/posterPali.png"
 
-// pass the data needed four our Facts to keep this component  reuseble
-
-const cartsProps = {
-	svgIcon1 : PerfectNumberSvg,
-	header1 :'Test perfect number now  effectivelly.' ,
-	linkto1 : '/perfect_number',
-	svgIcon2 :FibonacciSvg ,
-	header2 : 'Fibonacci finder (just for developers).',
-	linkto2 : '/fibonacci',
-
-}
 
 
 const Palindrom = () => {
@@ -28,10 +16,18 @@ const Palindrom = () => {
 				<Header />
 			</header>
 			<main className='w-full flex flex-col items-center justify-center '>
-				<Palindromposter />
+
+				<PagesPoster
+				  fromLink="#palindrom-form"
+				  header="Enjoy using our free palindrom checker."
+				  paragraph="Feel free to scroll down to the form and give it a try "
+				  image={poster}
+				  imageName='palindrom_poster'
+				/>
+				
 				<Facts {...palindromeFacts}/>
 				<FormPalindrom/>
-				<PagesCarts {...cartsProps} />
+				<HomeCarts/>
 			</main>
 			<div className='w-full flex flex-col items-center justify-center '>
 				<Footer />

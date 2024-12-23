@@ -1,25 +1,12 @@
-import PagesCarts from "../components/carts/PagesCarts"
 import Facts from "../components/Facts"
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import FibonacciPoster from "../components/posters/FibonacciPoster"
-import PerfectNumberSvg from "../assets/svgs/PalindromSvg"
-import PalandromSvg from "../assets/svgs/PalindromSvg"
 import {fibonacciFacts} from "../factsData"
 import FibonacciForm from "../components/forms/FibonacciForm"
+import HomeCarts from "../components/carts/HomeCarts"
+import PagesPoster from "../components/posters/PagesPoster"
+import poster from "../assets/nums.png"
 
-
-
-
-const cartsProps = {
-	svgIcon1 : PalandromSvg,
-	header1 :'Palindrom Algorithme for strings.' ,
-	linkto1 : '/palindrom',
-	svgIcon2 :PerfectNumberSvg ,
-	header2 : 'Test perfect number now  effectivelly.',
-	linkto2 : '/perfect_number',
-
-}
 
 const Fibonacci = () => {
   return (
@@ -28,10 +15,18 @@ const Fibonacci = () => {
         <Header />
     </header>
     <main className='w-full flex flex-col items-center justify-center '>
-        <FibonacciPoster />
+
+        <PagesPoster
+          fromLink="#fibonacci_form"
+          header="Enjoy searching for your fibonacci heros."
+          paragraph="Feel free to scroll down to the form and give it a try "
+          image={poster}
+          imageName="fibonacci_poster"
+        />
+        
         <Facts {...fibonacciFacts}/>
         <FibonacciForm/>
-        <PagesCarts {...cartsProps} />
+        <HomeCarts/>
     </main>
     <div className='w-full flex flex-col items-center justify-center '>
         <Footer />

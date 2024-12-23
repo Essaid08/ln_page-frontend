@@ -1,3 +1,9 @@
+
+import FibonacciSvg from "./assets/svgs/FibonnciiSvg";
+import HomeSvg from "./assets/svgs/HomeSvg";
+import PalandromSvg from "./assets/svgs/PalindromSvg";
+import PerfectNumberSvg from "./assets/svgs/PerfectNumberSvg"
+
 // facts about our algorithmes
 
 export const palindromeFacts = {
@@ -26,4 +32,28 @@ export const fibonacciFacts = {
         "The Fibonacci sequence has applications in many fields, including mathematics, computer science, and nature. In mathematics, it is used to study growth patterns and to solve problems related to recursion and dynamic programming. In computer science, it forms the basis of algorithms like Fibonacci heaps and is used in algorithm optimization. In nature, Fibonacci numbers appear in the spirals of sunflower seeds, pinecones, and shells, revealing a deep connection between numbers and the natural world."
 };
 
+
+
+export const cartsIfos = [
+    {
+        svgIcon : PalandromSvg,
+        header :'Palindrom Algorithme for strings.' ,
+        linkto : '/palindrom',
+    }, 
+    {
+        svgIcon : PerfectNumberSvg,
+        header :'Test perfect number now  effectivelly.' ,
+        linkto : '/perfect_number',
+    },
+    {
+        svgIcon : FibonacciSvg,
+        header :'Fibonacci finder (just for developers).' ,
+        linkto : '/fibonacci',
+    },
+    {
+        svgIcon : HomeSvg,
+        header :'Do you want go back to home main page.' ,
+        linkto : '/',
+    },
+]
 
