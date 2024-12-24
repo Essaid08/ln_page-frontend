@@ -4,6 +4,8 @@ WORKDIR /front_end
 
 COPY package*.json ./
 
+COPY .env .env 
+
 RUN npm install
 
 COPY  . .
